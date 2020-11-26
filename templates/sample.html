@@ -1,0 +1,104 @@
+   {% load static %}
+   <html>
+   <head>
+  
+   <style>
+   #success_message{ display: none;}
+
+   </style>
+    <body>
+
+    <div class="container">
+
+    <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+<fieldset>
+
+<!-- Form Name -->
+<legend><center><h2><b>Registration Form</b></h2></center></legend><br>
+
+<!-- Text input-->
+ {% static 'js/sample.js' %}
+<div class="form-group">
+  <label class="col-md-4 control-label">First Name</label>  
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input  name="first_name" placeholder="First Name" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+<!-- Text input-->
+  
+<!-- Text input-->
+
+<div class="form-group">
+  <label class="col-md-4 control-label">Employee ID</label>  
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input  name="Employee ID" placeholder="Username" class="form-control"  type="text">
+   {{ form.eid }}
+    </div>
+  </div>
+</div>
+
+<!-- Text input-->
+
+<div class="form-group">
+  <label class="col-md-4 control-label" >Employee Name</label> 
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input name="Employee Name" placeholder="Employee Name" class="form-control"  type="text">
+  {{ form.ename }} 
+    </div>
+  </div>
+</div>
+
+<!-- Text input-->
+
+<!-- Text input-->
+       <div class="form-group">
+  <label class="col-md-4 control-label">Employee Email</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+  <input name="Employee Email" placeholder="E-Mail Address" class="form-control"  type="text">
+  {{ form.eemail }} 
+    </div>
+  </div>
+</div>
+
+
+<!-- Text input-->
+       
+<div class="form-group">
+  <label class="col-md-4 control-label">Employee Contact</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+  <input name="Employee Contact" placeholder="(639)" class="form-control" type="text">
+  {{ form.econtact }}  
+    </div>
+  </div>
+</div>
+
+<!-- Select Basic -->
+
+<!-- Success message -->
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label"></label>
+  <div class="col-md-4"><br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button type="submit" class="btn btn-warning" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSUBMIT <span class="glyphicon glyphicon-send"></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+</div>
+    </div><!-- /.container -->\
+</body>
+</html>
